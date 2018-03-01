@@ -1,9 +1,3 @@
-# Provider declaration
-provider "aws" {
-  # AWS credentials should be declared as environment variables.
-  region = "${var.region}"
-}
-
 # Required variables
 variable "env" {}
 

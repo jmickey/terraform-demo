@@ -1,3 +1,9 @@
+# Provider declaration
+provider "aws" {
+  # AWS credentials should be declared as environment variables.
+  region = "${var.region}"
+}
+
 # Retrieves latest Amazon Linux AMI.
 data "aws_ami" "aws_linux_ami" {
   most_recent = true
